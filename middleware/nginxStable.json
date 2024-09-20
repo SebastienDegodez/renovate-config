@@ -1,0 +1,11 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "Only stable nginx versions",
+      "matchDatasources": ["docker"],
+      "matchPackagePatterns": ["^(.+/)?nginx$"],
+      "allowedVersions": "/^\\d*[02468](-.*)?$/"
+    }
+  ]
+}
