@@ -1,0 +1,12 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "Only stable nginx versions",
+      "matchPackagePatterns": [
+        "nginx"
+      ],
+      "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d*[02468])(?:\\.(?<patch>\\d+))?(?:-(?<compatibility>[a-zA-Z-]+))?$"
+    }
+  ]
+}
