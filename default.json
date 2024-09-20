@@ -1,0 +1,10 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    ":disableDependencyDashboard",
+    ":separateMultipleMajorReleases",
+    "security:openssf-scorecard",
+    ":enableVulnerabilityAlertsWithLabel(security)",
+    "github>sebastiendegodez/renovate-config//middleware/nginxStable"
+  ]
+}
